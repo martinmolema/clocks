@@ -1,0 +1,290 @@
+<html>
+<body>
+<h1>A clock and stopwatch using scaleable vector graphics(SVG)</h1>
+  
+<svg xmlns="http://www.w3.org/2000/svg"
+     
+     width="1000px"
+     height="500px">
+  <defs>
+    <svg id="clock"
+         width="46" height="46"
+         viewBox="-2 -2 44 44"
+    >
+      <circle cx="20"
+              cy="20"
+              r="20"
+              stroke="black" stroke-width="2" fill="white"
+      />
+      <g id="clock-all-markers">
+        <line stroke-width="0.5" fill="none" x1="2" x2="6" y1="20" y2="20" stroke="black"
+              transform="rotate(0, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(30, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(60, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="6" y1="20" y2="20" stroke="blue"
+              transform="rotate(90, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(120, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(150, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="6" y1="20" y2="20" stroke="blue"
+              transform="rotate(180, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(210, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(240, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="6" y1="20" y2="20" stroke="blue"
+              transform="rotate(270, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(300, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(330, 20 20) " class="ng-star-inserted"></line>
+      </g>
+      <g id="clock-hands">
+        <!--Short hand-->
+        <line x1="20"
+              x2="20"
+              y1="8"
+              y2="25"
+              stroke-linecap="round"
+              stroke-width="2" stroke="black" fill="none"
+        >
+          <animateTransform
+            attributeName="transform"
+            type="rotate"
+            dur="60s" begin="0s" repeatCount="indefinite"
+            values="0 20 20; 360 20 20"
+          />
+        </line>
+        <!--Long hand-->
+        <line x1="20"
+              x2="20"
+              y1="4"
+              y2="25"
+              stroke-linecap="round"
+              stroke-width="2" stroke="black" fill="none"
+        >
+          <animateTransform
+            attributeName="transform"
+            type="rotate"
+            dur="5s" begin="0s" repeatCount="indefinite"
+            values="0 20 20; 360 20 20"
+          />
+        </line>
+      </g>
+      <circle cx="20"
+              cy="20"
+              r="2"
+              stroke="blue" stroke-width="1" fill="white"
+      />
+    </svg>
+    <svg id="stopwatch"
+         width="50" height="54"
+         viewBox="-4 -6 46 48"
+    >
+      <g id="stopwatch-baseshape">
+        <circle cx="20"
+                cy="20"
+                r="20"
+                stroke="silver" stroke-width="2" fill="white"
+        />
+        <circle cx="20"
+                cy="-3"
+                r="2"
+                fill="none"
+                stroke="silver"/>
+        <rect
+          x="4"
+          y="4"
+          width="8" height="3"
+          fill="silver"
+          transform="rotate(-32, 4 , 4)"
+        ></rect>
+        <rect
+          x="29"
+          y="4"
+          width="8" height="3"
+          fill="silver"
+          transform="rotate(34, 36 , 4)"
+        ></rect>
+      </g>
+      <g id="stopwatch-all-markers">
+        <line stroke-width="0.5" fill="none" x1="2" x2="6" y1="20" y2="20" stroke="black"
+              transform="rotate(0, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(6, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(12, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(18, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(24, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="6" y1="20" y2="20" stroke="blue"
+              transform="rotate(30, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(36, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(42, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(48, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(54, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="6" y1="20" y2="20" stroke="blue"
+              transform="rotate(60, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(66, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(72, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(78, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(84, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="6" y1="20" y2="20" stroke="black"
+              transform="rotate(90, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(96, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(102, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(108, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(114, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="6" y1="20" y2="20" stroke="blue"
+              transform="rotate(120, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(125.99999999999999, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(132, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(138, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(144, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="6" y1="20" y2="20" stroke="blue"
+              transform="rotate(150, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(156, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(162, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(168, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(174, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="6" y1="20" y2="20" stroke="black"
+              transform="rotate(180, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(186.00000000000003, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(192, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(198.00000000000003, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(204, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="6" y1="20" y2="20" stroke="blue"
+              transform="rotate(210, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(216, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(222, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(228, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(234, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="6" y1="20" y2="20" stroke="blue"
+              transform="rotate(240, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(246, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(251.99999999999997, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(258, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(264, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="6" y1="20" y2="20" stroke="black"
+              transform="rotate(270, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(276, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(282, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(288, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(294, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="6" y1="20" y2="20" stroke="blue"
+              transform="rotate(300, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(306, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(312, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(318, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(324, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="6" y1="20" y2="20" stroke="blue"
+              transform="rotate(330, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(336, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(342, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(348, 20 20) " class="ng-star-inserted"></line>
+        <line stroke-width="0.5" fill="none" x1="2" x2="4" y1="20" y2="20" stroke="blue"
+              transform="rotate(354, 20 20) " class="ng-star-inserted"></line></g>
+      <g id="stopwatch-markers-text">
+        <text style="font-size:4pt;text-anchor: middle" text-anchor="middle" x="20" y="10">0</text>
+        <text style="font-size:4pt;text-anchor: middle" text-anchor="end" x="30" y="22">15</text>
+        <text style="font-size:4pt;text-anchor: middle" text-anchor="start" x="20" y="33">30</text>
+        <text style="font-size:4pt;text-anchor: middle" text-anchor="middle" x="10" y="22">45</text>
+      </g>
+      <g id="stopwatch-hand">
+        <polyline points="18,25
+                                22,25
+                                20, 20
+                                20.5, 20
+                                20,4
+                                19.5, 20
+                                20,20
+                                18,25"
+                  stroke-width="0.3" stroke="red" fill="red"
+        >
+          <animateTransform
+            attributeName="transform"
+            type="rotate"
+            dur="10s" begin="0s" repeatCount="indefinite"
+            values="0 20 20 ; 360 20 20"
+          />
+        </polyline>
+      </g>
+      <g id="center-pin">
+        <circle cx="20"
+                cy="20"
+                r="1.5"
+                stroke="red" stroke-width="1.5" fill="red"
+        />
+        <circle cx="20"
+                cy="20"
+                r="1"
+                stroke="silver" stroke-width="0.5" fill="gold"
+        />
+      </g>
+    </svg>
+  </defs>
+  <use xlink:href="#clock"
+       x="50"
+       y="50"
+       width="50" height="50"
+       transform="scale(3)"
+  />
+  <use xlink:href="#stopwatch"
+       transform="scale(3)"
+       x="150"
+       y="50"
+       width="50" height="50"
+  />
+
+
+  </g>
+</svg>
+</body>
+</html>
